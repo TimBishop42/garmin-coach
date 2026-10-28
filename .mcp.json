@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "garmin-coach": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/timbishop/Documents/Workspace/garmin-coach",
+        "run",
+        "garmin-coach-mcp"
+      ]
+    }
+  }
+}

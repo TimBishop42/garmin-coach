@@ -1,0 +1,27 @@
+# Edit me — the coach reads this every week. All paces are min/km.
+
+goal:
+  race: half-marathon          # 5k | 10k | half-marathon | marathon | general-fitness
+  target_time: "1:30:00"
+  race_date: 2026-11-15
+  priority: time-target        # finish | time-target | pr
+
+weekly:
+  sessions: 4                  # runs per week the coach may schedule
+  long_run_day: sunday
+  quality_days: [tuesday, thursday]   # days allowed for intervals/tempo
+  rest_days: [monday, friday]
+  current_weekly_km: 30        # roughly where you are now; coach adjusts from data
+  max_weekly_km: 55            # hard ceiling regardless of progression
+
+constraints:
+  max_volume_increase_pct: 10  # week-over-week cap
+  down_week_every: 4           # every Nth week reduce volume ~20%
+  notes: ""                    # e.g. "niggly left calf — no hills for now"
+
+# Optional pace anchors. Leave blank and the coach will derive paces from
+# Garmin race predictions + recent sessions instead.
+paces:
+  easy: "5:45-6:15"
+  threshold: "4:45-4:55"
+  interval: "4:20-4:35"
